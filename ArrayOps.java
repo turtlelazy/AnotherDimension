@@ -6,6 +6,16 @@ public class ArrayOps{
 		}
 		return returnSum;
 	}
+	
+	public static int largest(int[] arr){
+		int returnLargest = arr[0];
+		for(int i = 1;i<arr.length;i++){
+			if(arr[i]>returnLargest){
+				returnLargest = arr[i];
+			}
+		}
+		return returnLargest;
+	}
 
 
 }
