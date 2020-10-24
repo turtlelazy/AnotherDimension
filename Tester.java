@@ -30,5 +30,9 @@ public class Tester{
 		System.out.println(ArrayOps.isColMagic(collumMagicYes));
 		System.out.println(ArrayOps.isColMagic(rowAndColMagic));
 		
+		System.out.println(ArrayOps.isRowMagic(rowMagicYes));
+		System.out.println(ArrayOps.isRowMagic(collumMagicYes));
+		System.out.println(ArrayOps.isRowMagic(rowAndColMagic));
+		
 	}
 }
