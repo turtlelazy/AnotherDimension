@@ -12,6 +12,7 @@ public class Tester{
 		int[][] rowMagicYes = {{1,  2, 3, 4 }, {  2, 3,  4,  1},{ 3, 4,  1, 2 } };
 		int[][] collumMagicYes = { {  1,  1, 1 },{  2, 2, 2 },{ 3,  3, 3 } };
 		int[][] rowAndColMagic = { {  2,  2, 2 },{  2, 2, 2 }};
+		int[][]E = {{  2,  4, 2 },{  2, 2, 2 } };
 		
 		System.out.println(ArrayOps.sum(b));
 		System.out.println(ArrayOps.largest(b));
@@ -33,6 +34,9 @@ public class Tester{
 		System.out.println(ArrayOps.isRowMagic(rowMagicYes));
 		System.out.println(ArrayOps.isRowMagic(collumMagicYes));
 		System.out.println(ArrayOps.isRowMagic(rowAndColMagic));
+		
+		System.out.println(ArrayOps.isLocationMagic(E, 0, 1));
+		System.out.println(ArrayOps.isLocationMagic(E, 1, 1));
 		
 	}
 }
