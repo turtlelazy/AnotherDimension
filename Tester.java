@@ -8,7 +8,11 @@ public class Tester{
                   { -5, -2,  2, -9 }
                };
 		int[]  B  =   {  1, 3, 5 };
-	
+		
+		int[][] rowMagicYes = {{1,  2, 3, 4 }, {  2, 3,  4,  1},{ 3, 4,  1, 2 } };
+		int[][] collumMagicYes = { {  1,  1, 1 },{  2, 2, 2 },{ 3,  3, 3 } };
+		int[][] rowAndColMagic = { {  2,  2, 2 },{  2, 2, 2 }};
+		
 		System.out.println(ArrayOps.sum(b));
 		System.out.println(ArrayOps.largest(b));
 		System.out.println(Arrays.toString(ArrayOps.largestInRows(x)));
@@ -20,6 +24,11 @@ public class Tester{
 		System.out.println(ArrayOps.sum(B));
 		System.out.println(ArrayOps.sum(A));
 		
-		System.out.println( Arrays.toString(ArrayOps.sumCols(A)));
+		System.out.println(Arrays.toString(ArrayOps.sumCols(A)));
+		
+		System.out.println(ArrayOps.isColMagic(rowMagicYes));
+		System.out.println(ArrayOps.isColMagic(collumMagicYes));
+		System.out.println(ArrayOps.isColMagic(rowAndColMagic));
+		
 	}
 }
